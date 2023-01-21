@@ -1,7 +1,3 @@
-# Deprecated
-
-All Riru users and Riru modules should migrate to Zygisk.
-
 # Riru
 
 Riru only does one thing, inject into zygote in order to allow modules to run their codes in apps or the system server.
@@ -11,22 +7,18 @@ Riru only does one thing, inject into zygote in order to allow modules to run th
 ## Requirements
 
 Android 6.0+ devices rooted with [Magisk](https://github.com/topjohnwu/Magisk)
+Android devices rooted with [KernelSU](https://github.com/tiann/KernelSU)
 
 ## Guide
 
 ### Install
 
-* From Magisk Manager
-
-  1. Search "Riru" in Magisk Manager
-  2. Install the module named "Riru"
-
-  > The Magisk version requirement is enforced by Magisk Manager. You can check [Magisk's module installer script](https://github.com/topjohnwu/Magisk/blob/master/scripts/module_installer.sh).
+  > Magisk Manager and KernelSU Manager do not provide module download, please download and install manually.
 
 * Manually
 
-  1. Download the zip from the [GitHub release](https://github.com/RikkaApps/Riru/releases)
-  2. Install in Magisk Manager (Modules - Install from storage - Select downloaded zip)
+  1. Download the zip from last [GitHub Action](https://github.com/canyie/Riru/actions/workflows/main.yml).
+  2. Install in Magisk Manager (Modules - Install from storage - Select downloaded zip) or KernelSU Manager.
 
 ### Common problems
 
