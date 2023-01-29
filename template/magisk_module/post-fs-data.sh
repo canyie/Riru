@@ -27,7 +27,7 @@ cd "$MODDIR" || exit 1
 # Export our own resetprop tool to rirud
 export PATH="$PATH:$MODDIR"
 # Rirud must be started before ro.dalvik.vm.native.bridge being reset
-unshare -m sh -c "nohup /system/bin/app_process -Djava.class.path=rirud.apk /system/bin --nice-name=rirud riru.Daemon 25206 $KSUDIR $(getprop ro.dalvik.vm.native.bridge) 2>&1 &"
+unshare -m sh -c "/system/bin/app_process -Djava.class.path=rirud.apk /system/bin --nice-name=rirud riru.Daemon 25206 $KSUDIR $(getprop ro.dalvik.vm.native.bridge)&"
 #umount "$MODDIR/module.prop"
 
 # post-fs-data phase, REMOVING THE -n FLAG MAY CAUSE DEADLOCK!
